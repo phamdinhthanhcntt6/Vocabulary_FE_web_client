@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { logo_doulingo } from "../../../public/image";
+import { logo_doulingo } from "../../../../public/image";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
