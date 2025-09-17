@@ -21,12 +21,12 @@ const Header = () => {
 
   return (
     <header
-      className={`h-20 fixed top-0 z-10 bg-white w-full px-4 transition-all duration-300 ${
+      className={`h-18 fixed top-0 z-10 bg-white w-full px-4 transition-all duration-300 ${
         scrolled ? "border-b-2 border-slate-200" : "border-b-0"
       }`}
     >
-      <div className="lg:max-w-7xl mx-auto h-full items-center flex justify-between p-4">
-        <Image alt="logo" src={logo_doulingo} width={200} height={100} />
+      <div className="lg:max-w-5xl mx-auto h-full items-center flex justify-between p-4">
+        <Image alt="logo" src={logo_doulingo} width={180} height={80} />
       </div>
     </header>
   );
