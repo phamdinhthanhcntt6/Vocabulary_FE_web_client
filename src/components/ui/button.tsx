@@ -35,6 +35,8 @@ const buttonVariants = cva(
           "uppercase bg-sky-500/15 text-sky-500 border-sky-300 font-bold border-2 hover:bg-sky-500/30 transition-none",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        ghostOutline:
+          "uppercase bg-white text-black font-bold border-none text-slate-400",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

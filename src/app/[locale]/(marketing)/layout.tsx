@@ -8,19 +8,22 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
-const MarketingLayout = async ({ children, params }: Props) => {
-  const { locale } = await params;
+const MarketingLayout = ({ children, params }: Props) => {
+  const { locale } = params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
   setRequestLocale(locale);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-1">{children}</div>
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );
