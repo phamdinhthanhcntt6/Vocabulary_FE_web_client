@@ -8,12 +8,11 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-const MarketingLayout = ({ children, params }: Props) => {
-  const { locale } = params;
-
+const MarketingLayout = async ({ children, params }: Props) => {
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
