@@ -9,7 +9,7 @@ const exo2 = Exo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Vocabulary Duo",
+  title: "Duolingo",
   description: "Learn vocabulary with fun and games",
   icons: {
     icon: "/favicon.ico.svg",

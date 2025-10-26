@@ -9,16 +9,16 @@ import {
 } from "@/components/ui/command";
 import {
   Popover,
-  PopoverTrigger,
   PopoverContent,
+  PopoverTrigger,
 } from "@/components/ui/popover";
 import { LANGUAGES } from "@/constants/language";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { logo_doulingo } from "../../../../public/image";
-import { useTranslations } from "next-intl";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
